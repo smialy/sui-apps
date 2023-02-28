@@ -1,0 +1,41 @@
+{
+  "name": "@sui-apps/example",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Piotr Smialkowski <p.smialkowski@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "source": "src/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.mjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "micropack",
+    "build:dev": "micropack --dev",
+    "build:watch": "npm run build -- --dev --watch"
+  },
+  "dependencies": {
+    "preact": "^10.13.0",
+    "@sui-apps/core": "0.0.1",
+    "@sui-apps/router": "0.0.1",
+    "@sui-apps/preact": "0.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "mocha": "^10.2.0",
+    "@stool/micropack": "0.4.0",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "typescript": "^4.9.5"
+  }
+}

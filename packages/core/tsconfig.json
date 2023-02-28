@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "CommonJS",
+      "jsx": "react-jsx",
+      "jsxImportSource": "preact",
+      "moduleResolution": "node",
+      "declaration": true,
+      "declarationDir": "types"
+    },
+    "include": ["src/*"],
+    "ts-node": {
+      "transpileOnly": true
+    }
+}
